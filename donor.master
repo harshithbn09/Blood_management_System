@@ -1,0 +1,117 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="donor.master.cs" Inherits="Seeker" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            height: 921px;
+            width: 1430px;
+        }
+        .auto-style2 {
+            width: 100%;
+            height: 220px;
+        }
+        .auto-style4 {
+            width: 340px;
+            height: 225px;
+        }
+        .auto-style5 {
+            width: 1079px;
+            height: 213px;
+        }
+        .auto-style6 {
+            width: 100%;
+        }
+        .auto-style7 {
+            width: 100%;
+            height: 486px;
+        }
+        .auto-style8 {
+            width: 70px;
+        }
+        .auto-style10 {
+            width: 100%;
+            height: 155px;
+            background-color: #333333;
+        }
+        .auto-style11 {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="auto-style1">
+        
+        <table class="auto-style2">
+            <tr>
+                <td>
+                    <img alt="" class="auto-style5" src="image/images%20(4).jpg" /><img alt="" class="auto-style4" src="image/images%20(5).jpg" /></td>
+            </tr>
+        </table>
+        <table class="auto-style6">
+            <tr>
+                <td>
+                    <asp:Menu ID="Menu3" runat="server" BackColor="#FFFBD6" BorderStyle="None" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.8em" ForeColor="Red" Orientation="Horizontal" StaticSubMenuIndent="10px" Width="1422px" RenderingMode="Table" style="font-weight: 700; font-size: medium">
+                        <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
+                        <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        <DynamicMenuStyle BackColor="#FFFBD6" />
+                        <DynamicSelectedStyle BackColor="#FFCC66" />
+                        <Items>
+                            <asp:MenuItem NavigateUrl="~/HomeDS.aspx" Text="HOME" Value="HOME"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Checkprofile.aspx" Text="CHECK PROFILE" Value="CHECK PROFILE"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/DS change password.aspx" Text="CHANGE PASSWORD" Value="CHANGE PASSWORD"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/HelpDS.aspx" Text="HELP" Value="HELP"></asp:MenuItem>
+                        </Items>
+                        <StaticHoverStyle BackColor="#990000" ForeColor="White" />
+                        <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        <StaticSelectedStyle BackColor="#FFCC66" />
+                    </asp:Menu>
+                </td>
+            </tr>
+        </table>
+        <table class="auto-style7">
+            <tr>
+                <td class="auto-style8">
+                    <asp:Menu ID="Menu2" runat="server" BackColor="#FFFBD6" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#990000" Height="500px" RenderingMode="Table" StaticSubMenuIndent="10px">
+                        <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
+                        <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        <DynamicMenuStyle BackColor="#FFFBD6" />
+                        <DynamicSelectedStyle BackColor="#FFCC66" />
+                        <Items>
+                            <asp:MenuItem Text="Search Blood Donor" Value="Search Blood Donor" NavigateUrl="~/searchdonor.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Request as blood donor" Value="Request as blood donor" NavigateUrl="~/request as donor.aspx"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/request as seeker.aspx" Text="Request as Blood Seeker" Value="Request as Blood Seeker"></asp:MenuItem>
+                            <asp:MenuItem Text="My Bookings" Value="My Bookings" NavigateUrl="~/mybookings.aspx"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/DS Payment.aspx" Text="Payment Details" Value="Payment Details"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/FeedbackDS.aspx" Text="Feedback" Value="Feedback"></asp:MenuItem>
+                        </Items>
+                        <StaticHoverStyle BackColor="#990000" ForeColor="White" />
+                        <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        <StaticSelectedStyle BackColor="#FFCC66" />
+                    </asp:Menu>
+                </td>
+                <td>
+                    
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                    
+                </td>
+            </tr>
+        </table>
+        
+        <table class="auto-style10">
+            <tr>
+                <td aria-expanded="false" class="auto-style11" style="font-size: x-large; font-weight: bolder; font-style: normal; vertical-align: middle; text-align: center; color: #FFFFFF;"><em>DESIGN &amp; DEVELOP BY: ARVIND SHRIVASTAVA</em></td>
+            </tr>
+        </table>
+        
+    </div>
+    </form>
+</body>
+</html>
